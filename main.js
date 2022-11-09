@@ -54,6 +54,10 @@
 // In the callback function, test whether every word has less than or equal to 10 characters.
 // Log lengthCheck to the console to see the result. If true is logged, every word in the story has 10 characters or less. Otherwise, one or more words are longer than 10 characters
 
+// Hmm, it looks like there’s at least one word longer than 10 characters.
+// Use an iterator method of your choice to access the word (there is only one) in the storyWords array that is greater than 10 characters. 
+// Then, manually replace the word in the original story string with a shorter word.
+// Some ideas for replacement words that can be used are: stunning, dazzling, or glorious.
 
 
 
@@ -92,6 +96,12 @@ let lengthCheck = storyWords.every( (word) => {
     return storyWords.length < 10;
   });
   console.log(lengthCheck);
+
+  let longWord = storyWords.findIndex( (word) => {
+    return word === 'breathtaking';
+  });
+  console.log(longWord);
+  storyWords[111] = 'glorious';
 
 
 console.log(storyWords.join(' '));
