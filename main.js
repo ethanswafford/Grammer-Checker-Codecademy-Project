@@ -17,6 +17,13 @@
 // While ES6 arrow syntax is recommended for the callback function, feel free to use any syntax you’re comfortable with.
 
 
+// For each word in the storyWords array, we want the count variable to increment by one.
+// Add a parameter named word to the callback function of the .forEach() method to be used to store the current element when iterating over the storyWords array. 
+// Each time storyWord iterates, increment count by one.
+// Below the .forEach() method, log count to see how many words are in the story.
+
+
+
 
 
 
@@ -29,10 +36,10 @@ let badWord = 'freaking';
 
 
 // console.log(storyWords);
-storyWords.forEach( () => {
-
+storyWords.forEach( (word) => {
+    count++;
 });
-
+console.log(count);
 
 
 
