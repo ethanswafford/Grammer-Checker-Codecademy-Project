@@ -20,7 +20,7 @@ let badWord = 'freaking';
 
 
 // console.log(storyWords);
-console.log(storyWords.join(''));
+console.log(storyWords.join(' '));
 
 
 console.log('CONNECTED');
