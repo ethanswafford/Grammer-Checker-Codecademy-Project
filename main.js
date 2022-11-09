@@ -44,6 +44,9 @@
 // The .findIndex() callback function should check each word to see if it equals the badWord variable declared on line 6, and return the index of the found word.
 // Then, log badWordIndex to the console.
 
+// Now that we have the index of the bad word, we can easily replace it with something more appropriate.
+// Access the element inside the storyWords array that has the index of badWordIndex using bracket notation. Set the accessed element equal to the more appropriate string, 'really'.
+// Save the code and check that the bad word has been replaced.
 
 
 
@@ -76,6 +79,8 @@ let badWordIndex =storyWords.findIndex( (word) => {
     return word === badWord;
   });
   console.log(badWordIndex);
+
+storyWords[78] = 'really';
 
 
 
