@@ -22,6 +22,11 @@
 // Each time storyWord iterates, increment count by one.
 // Below the .forEach() method, log count to see how many words are in the story.
 
+// A word count of 181 is a bit long for this story. Let’s filter out all instances of the word “literally” to shorten the story and remove the unnecessary word. 
+// We will reassign the filtered story to the same storyWords variable by applying the .filter() method! 
+// Throughout the project, we’ll use this approach of reassigning the storyWords variable for each revision of the story.
+// Below where you logged the count variable, reassign the storyWords variable to equal the invocation of the .filter() method on the storyWords array. 
+// Give the .filter() method a callback function with a parameter of word.
 
 
 
@@ -40,7 +45,9 @@ storyWords.forEach( (word) => {
     count++;
 });
 console.log(count);
-
+storyWords = storyWords.filter( (word) => {
+    
+});
 
 
 
