@@ -12,7 +12,7 @@ let misspelledWord = 'beautifull';
 let badWord = 'freaking';
 
 
-
+console.log(storyWords);
 
 
 
